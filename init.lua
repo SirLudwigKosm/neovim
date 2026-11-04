@@ -1,3 +1,6 @@
+--barrita se elimina o habilita por defecto
+vim.opt.showmode=false
+
 --NUmeros en linea
 vim.opt.number=true
 vim.opt.relativenumber=false
@@ -42,7 +45,7 @@ vim.g.mapleader=" "
 	    desc="Salir del modo Insert"
         })
 
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.vim"
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
     vim.fn.system (
         {   
